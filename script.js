@@ -41,7 +41,6 @@ startTime();
 
 //-----------------------------------------------------------
 
-/*
 let today = new Date()
 
 let dd = today.getDate()
@@ -59,7 +58,6 @@ today = yyyy + mm + dd
 const $inputDate = document.querySelector('#birthDate')
 
 $inputDate.setAttribute('max', today)
-*/
 
 const $ageForm = document.querySelector('#age');
 const $currentAge = document.querySelector('#currentAge')
@@ -74,7 +72,7 @@ function getAge(event) {
         age--;
     }
     event.preventDefault()
-    $currentAge.innerHTML = 'Your age is: ' + age
+    $currentAge.innerHTML = 'Your age is: ' + age 
 }
 
 $ageForm.addEventListener('submit', getAge)
